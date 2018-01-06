@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aftership": "^5.3.4"
+    "aftership": "^5.3.4",
+    "express": "^4.16.2"
   }
 }
