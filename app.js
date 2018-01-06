@@ -16,7 +16,7 @@ app.get('/', (request, response) => {
     //     };
     //     response.send(status);
     // });
-    response.send(status);
+    response.send("faskdfj;k");
 });
 
 app.listen(3000, () => {
