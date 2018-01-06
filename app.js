@@ -6,16 +6,17 @@ const app = express();
 var port = process.env.PORT || 3000;
 
 app.get('/', (request, response) => {
-    Aftership.call('GET', '/last_checkpoint/dhl/5398338002', function (err, result) {
-        if (err) {
-            return console.log(err);
-        }
-        let status = {
-            tracking_number: result.data['tracking_number'],
-            message: result.data.checkpoint['message']
-        };
-        response.send(status);
-    });
+    // Aftership.call('GET', '/last_checkpoint/dhl/5398338002', function (err, result) {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+    //     let status = {
+    //         tracking_number: result.data['tracking_number'],
+    //         message: result.data.checkpoint['message']
+    //     };
+    //     response.send(status);
+    // });
+    response.send(status);
 });
 
 app.listen(3000, () => {
